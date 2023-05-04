@@ -3,9 +3,10 @@ int main()
 {
     int N;
     int X;
-    int A[N];
+  
 
     scanf("%d %d", &N, &X);
+    int A[N];
 
     for( int n = 0 ; n < N ; n++ )
     {
@@ -24,3 +25,4 @@ int main()
 
     return 0;
 }
+
