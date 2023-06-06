@@ -9,7 +9,7 @@ int main()
 
     scanf("%d %d", &N, &M);
 
-    int basket[N];
+    int basket[N + 1];
 
     for( int n = 1 ; n <= N ; n++ ){
         basket[n] = n;
