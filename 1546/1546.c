@@ -23,8 +23,20 @@ int main(int argc, char const *argv[])
 
     max = score[0];
 
+    float upscore[1000];
+
     for(int n = 0 ; n < num ; n++){
-        printf("%d ", score[n]);
+        upscore[n] = score[n] / (float)max * 100;
     }
+    float all = 0;
+    float average = 0;
+
+    for(int n = 0 ; n < num ; n++){
+        all += upscore[n];
+    }
+
+    average = all / (float)num;
+
+    printf("%f ", average);
     return 0;
 }
